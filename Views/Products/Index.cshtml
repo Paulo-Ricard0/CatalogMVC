@@ -7,7 +7,7 @@
     <div class="col-md-12">
         <div>
             <div class="pull-left">
-                <a asp-action="CriarNovoProduto" class="btn btn-primary">
+                <a asp-action="ShowViewCreateProduct" class="btn btn-primary">
                     <span title="Criar Produto" class="fas fa-plus"></span> Novo Produto
                 </a>
             </div>
@@ -51,13 +51,13 @@
                         @Html.DisplayFor(modelItem => item.ImageUrl)
                     </td>
                     <td>
-                        <a asp-action="AtualizarProduto" asp-route-id="@item.Id" title="Editar" class="btn btn-warning">
+                        <a asp-action="ShowViewUpdateProduct" asp-route-id="@item.Id" title="Editar" class="btn btn-warning">
                             <span class="fas fa-edit"></span>
                         </a>
-                        <a asp-action="DeletarProduto" asp-route-id="@item.Id" title="Deletar" class="btn btn-danger">
+                        <a asp-action="ShowViewDeleteProduct" asp-route-id="@item.Id" title="Deletar" class="btn btn-danger">
                             <span class="fas fa-trash-alt"></span>
                         </a>
-                        <a asp-action="DetalhesProduto" asp-route-id="@item.Id" title="Detalhes" class="btn btn-success">
+                        <a asp-action="ProductDetails" asp-route-id="@item.Id" title="Detalhes" class="btn btn-success">
                             <span class="fas fa-check"></span>
                         </a>
                     </td>
